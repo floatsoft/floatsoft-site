@@ -1,4 +1,4 @@
-# floatsoft.github.io
+# Floatsoft Site
 
 The Floatsoft website.
 
