@@ -1,2 +1,7 @@
 # floatsoft.github.io
-The Floatsoft GitHub page
+
+The Floatsoft website.
+
+## Built with
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
