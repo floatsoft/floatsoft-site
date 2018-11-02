@@ -4,16 +4,19 @@
   "private": true,
   "homepage": "https://floatsoft.io",
   "dependencies": {
-    "gh-pages": "^2.0.1",
     "node-sass": "^4.9.4",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-scripts": "2.1.1"
   },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "gh-help": "gh-pages --help",
+    "deploy": "gh-pages -d build -r https://github.com/floatsoft/floatsoft.github.io.git -b master",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
