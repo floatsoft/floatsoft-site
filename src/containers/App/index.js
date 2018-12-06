@@ -1,6 +1,9 @@
 import React, { Component } from "react";
+import Header from "../../components/Header";
 import logo from "images/react-logo.svg";
-import "typeface-montserrat";
+
+import "typeface-ibm-plex-mono";
+import "typeface-ubuntu-mono";
 
 import "./App.scss";
 
@@ -8,22 +11,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <div className="App-background">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>Work in progress.</p>
-          <a
-            className="App-link"
-            href="https://github.com/floatsoft/floatsoft.github.io"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visit{" "}
-            <i>
-              <code>Floatsoft</code>
-            </i>{" "}
-            on GitHub
-          </a>
-        </header>
+        </div>
+        <section className="App-content-section">
+          <Header />
+        </section>
       </div>
     );
   }
