@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
-import logo from 'images/react-logo.svg';
-import './App.scss';
+import React, { Component } from "react";
+import logo from "images/react-logo.svg";
+import "typeface-montserrat";
+
+import "./App.scss";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>Work in progress.</p>
           <a
@@ -15,13 +17,13 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Visit{' '}
+            Visit{" "}
             <i>
               <code>Floatsoft</code>
-            </i>{' '}
+            </i>{" "}
             on GitHub
           </a>
-        </header>
+        </header> */}
       </div>
     );
   }
