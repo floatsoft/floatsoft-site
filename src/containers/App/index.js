@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <header className="App-header">
+        <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>Work in progress.</p>
           <a
@@ -23,7 +23,7 @@ class App extends Component {
             </i>{" "}
             on GitHub
           </a>
-        </header> */}
+        </header>
       </div>
     );
   }
