@@ -10,17 +10,39 @@
   min-height: 3rem;
   max-height: 4rem;
   padding: 0 $horizontal-spacing;
-  box-shadow: $light-shadow;
   color: $secondary-color;
+  background-color: $background-color;
+  z-index: 1;
 }
 
 .Header-title {
+  flex: 1;
+  font-size: 1.25em;
+  padding: 1vmin 0;
 }
 
-.Header-subtitle {
+.Header_style_hero {
+  position: relative;
+  min-height: 70vmin;
+  .Header-title {
+    text-align: center;
+    font-size: 10vmin;
+    width: 100%;
+    padding-top: 30vmin;
+  }
 }
 
-.Header-seperator {
-  font-size: 1.25rem;
-  padding: 0 1ch;
+.Header-link {
+  display: flex;
+  align-items: center;
+  font-size: 0.875em;
+  margin: 0 0 0 1rem;
+  padding: 0.5rem 1rem;
+  border-bottom: thin solid;
+  border-color: transparent;
+  transition: $medium-transition;
+}
+
+.Header-link:hover {
+  border-color: $accent-color;
 }

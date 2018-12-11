@@ -4,10 +4,15 @@
   "private": true,
   "homepage": "https://floatsoft.io",
   "dependencies": {
+    "@mdi/js": "^3.2.89",
+    "@mdi/react": "^1.1.0",
     "node-sass": "^4.9.4",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
+    "react-on-screen": "^2.1.0",
     "react-scripts": "2.1.1",
+    "react-typist": "^2.0.4",
+    "styled-components": "^4.1.2",
     "typeface-ibm-plex-mono": "^0.0.61",
     "typeface-ubuntu-mono": "^0.0.54"
   },
