@@ -7,10 +7,7 @@ function SectionTitle({ children: title }) {
   return (
     <h1 className="Section-title">
       <em>
-        <Typist>
-          <Typist.Delay ms={500} />
-          {title}
-        </Typist>
+        <Typist>{title}</Typist>
       </em>
     </h1>
   );

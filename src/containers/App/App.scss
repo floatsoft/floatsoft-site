@@ -5,7 +5,7 @@
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
-  opacity: 0.05;
+  opacity: 0.1;
   pointer-events: none;
 }
 
@@ -19,10 +19,6 @@
   justify-content: center;
   pointer-events: none;
   z-index: 2;
-}
-
-.App-content-section {
-  height: 100%;
 }
 
 @keyframes App-logo-spin {

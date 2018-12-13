@@ -1,0 +1,64 @@
+@import "../../scss/variables.scss";
+
+.MenuDrawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  min-width: 50vw;
+  max-width: 64vmin;
+  background-color: $secondary-color;
+  transition: $medium-transition;
+  z-index: 2;
+
+  .Header-link {
+    margin-right: 10vmin;
+    font-size: 1.125em;
+    color: $background-color;
+  }
+  .Header-MenuDrawer-toggle-button {
+    width: 100%;
+  }
+
+  svg {
+    fill: $background-color;
+  }
+}
+
+.MenuDrawer-open {
+  right: 0;
+}
+
+.MenuDrawer-closed {
+  right: -64vmin;
+}
+
+.MenuDrawer-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  background-color: $secondary-color;
+  transition: visibility 0s linear 0.5s, $medium-transition;
+  opacity: 0;
+  z-index: 2;
+}
+
+.MenuDrawer-background-open {
+  transition-delay: 0s;
+  opacity: 0.1;
+}
+
+.MenuDrawer-background-closed {
+  pointer-events: none;
+  opacity: 0;
+}
+
+@media screen and (min-width: $small-view) {
+  .MenuDrawer,
+  .MenuDrawer-background {
+    display: none;
+  }
+}

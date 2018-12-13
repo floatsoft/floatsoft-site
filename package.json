@@ -11,6 +11,7 @@
     "react-dom": "^16.6.0",
     "react-on-screen": "^2.1.0",
     "react-scripts": "2.1.1",
+    "react-scrollable-anchor": "^0.6.1",
     "react-typist": "^2.0.4",
     "styled-components": "^4.1.2",
     "typeface-ibm-plex-mono": "^0.0.61",

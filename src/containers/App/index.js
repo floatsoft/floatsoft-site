@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import TrackVisibility from "react-on-screen";
 
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+
 import AboutSection from "../../components/AboutSection";
 import SoftwareSection from "../../components/SoftwareSection";
 
@@ -21,17 +22,10 @@ class App extends Component {
         <div className="App-background">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
-        <section className="App-content-section">
-          <Header />
-          <div style={{ height: "300vh" }}>
-            <TrackVisibility once>
-              {({ isVisible }) => isVisible && <AboutSection />}
-            </TrackVisibility>
-            <TrackVisibility once>
-              {({ isVisible }) => isVisible && <SoftwareSection />}
-            </TrackVisibility>
-          </div>
-        </section>
+        <Header />
+        <AboutSection />
+        <SoftwareSection />
+        <Footer />
       </div>
     );
   }

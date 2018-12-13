@@ -1,0 +1,28 @@
+@import "../../scss/variables.scss";
+
+.Footer {
+  display: flex;
+  align-items: center;
+  height: 6vmin;
+  min-height: 3rem;
+  max-height: 4rem;
+  padding: 0 $horizontal-spacing;
+  color: $secondary-color;
+  background-color: $background-color;
+  border-top: thin solid $secondary-color;
+  z-index: 1;
+}
+
+.Footer-title {
+  flex: 1 1;
+  padding: 1vmin 0;
+  font-size: 0.75rem;
+}
+
+.Footer-link {
+  display: flex;
+  align-items: center;
+  font-size: 0.875em;
+  margin: 0 0 0 1rem;
+  padding: 0.5rem 1rem;
+}

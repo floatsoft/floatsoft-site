@@ -2,6 +2,7 @@
 
 .Header {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   display: flex;
@@ -17,18 +18,21 @@
 
 .Header-title {
   flex: 1;
-  font-size: 1.25em;
   padding: 1vmin 0;
+  font-size: 1.25em;
 }
 
 .Header_style_hero {
   position: relative;
-  min-height: 70vmin;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: $background-color;
+  background: linear-gradient($background-color 95%, transparent);
   .Header-title {
     text-align: center;
     font-size: 10vmin;
     width: 100%;
-    padding-top: 30vmin;
+    padding-top: calc(50vh - 5.5vmin);
   }
 }
 
@@ -45,4 +49,33 @@
 
 .Header-link:hover {
   border-color: $accent-color;
+}
+
+.Header-MenuDrawer-toggle-button {
+  background-color: inherit;
+  outline: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  cursor: pointer;
+  border: none;
+}
+
+.hide-for-medium {
+  display: none;
+}
+
+@media screen and (max-width: $small-view) {
+  .Header-title {
+    font-size: 1em;
+  }
+  .Header-link:hover {
+    border-color: transparent;
+  }
+  .show-for-medium {
+    display: none;
+  }
+  .hide-for-medium {
+    display: initial;
+  }
 }
